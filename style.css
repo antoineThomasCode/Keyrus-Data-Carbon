@@ -88,6 +88,9 @@ body {
 }
 .header-content {
     padding: 40px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-basis: 100%;
 }
 .main-title {
     margin-bottom: 30px;
@@ -115,6 +118,7 @@ h2 > span {
     line-height: normal;
     font-size: 18px;
     margin-bottom: 40px;
+    z-index: 2;
 }
 .header-branding {
     display: flex;
@@ -126,10 +130,6 @@ h2 > span {
     flex-wrap: nowrap;
     flex-basis: 100%;
     justify-content: space-between;
-}
-
-.header-branding > div > img {
-    height: 15px;
 }
 .header-branding > div > img {
     height: 20px;
@@ -170,5 +170,52 @@ h2 > span {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+@media screen and (min-width: 650px) {
+    .header-branding > div > img  {
+        height: 40px;
+        margin-right: 35px;
+    }
+    .header-branding > div {
+        justify-content: flex-start;
+        margin-top: 40px;
+    }
+    .illustration-container {
+        top: 120px;
+    }
+    .header-bg-line {
+        position: absolute;
+        right: -100px;
+        top: -50px;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .main-title  {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    .illustration-container  {
+        height: 800px;
+        width: 800px;
+    }
+    .video {
+        top: 325px;
+        left: 455px;
+        height: 191px;
+        width: 191px;
+    }
+    .header-bg-line {
+        position: absolute;
+        right: -250px;
+        top: -320px;
+    }
+    .header-bg-line > img {
+        height: 1000px;
+    }
+    .sub_main-title{
+        font-size: 30px;
+    }
 }
 
